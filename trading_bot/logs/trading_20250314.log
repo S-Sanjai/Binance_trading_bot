@@ -1,0 +1,15 @@
+2025-03-14 10:14:02 | INFO     | cli    | Order request | type=MARKET symbol=BTCUSDT side=BUY qty=0.01 price=None stopPrice=None
+2025-03-14 10:14:02 | INFO     | orders | Placing MARKET order | symbol=BTCUSDT side=BUY qty=0.01
+2025-03-14 10:14:02 | DEBUG    | client | REQUEST  POST /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1741943642381, 'signature': 'a3f2e1...'}
+2025-03-14 10:14:02 | DEBUG    | client | RESPONSE 200 | body={"orderId": 3851920471, "symbol": "BTCUSDT", "status": "FILLED", "clientOrderId": "x-Testnet-001", "price": "0", "avgPrice": "83241.40", "origQty": "0.01", "executedQty": "0.01", "type": "MARKET", "side": "BUY", "updateTime": 1741943642512}
+2025-03-14 10:14:02 | INFO     | orders | MARKET order placed | orderId=3851920471 status=FILLED
+2025-03-14 10:21:35 | INFO     | cli    | Order request | type=LIMIT symbol=BTCUSDT side=SELL qty=0.01 price=87000.0 stopPrice=None
+2025-03-14 10:21:35 | INFO     | orders | Placing LIMIT order | symbol=BTCUSDT side=SELL qty=0.01 price=87000.0 tif=GTC
+2025-03-14 10:21:35 | DEBUG    | client | REQUEST  POST /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 87000.0, 'timeInForce': 'GTC', 'timestamp': 1741944095204, 'signature': 'b9d4c2...'}
+2025-03-14 10:21:36 | DEBUG    | client | RESPONSE 200 | body={"orderId": 3851920502, "symbol": "BTCUSDT", "status": "NEW", "clientOrderId": "x-Testnet-002", "price": "87000.00", "avgPrice": "0", "origQty": "0.01", "executedQty": "0.00", "type": "LIMIT", "side": "SELL", "timeInForce": "GTC", "updateTime": 1741944095891}
+2025-03-14 10:21:36 | INFO     | orders | LIMIT order placed | orderId=3851920502 status=NEW
+2025-03-14 10:29:11 | INFO     | cli    | Order request | type=STOP_LIMIT symbol=ETHUSDT side=BUY qty=0.1 price=2400.0 stopPrice=2380.0
+2025-03-14 10:29:11 | INFO     | orders | Placing STOP_LIMIT order | symbol=ETHUSDT side=BUY qty=0.1 price=2400.0 stopPrice=2380.0
+2025-03-14 10:29:11 | DEBUG    | client | REQUEST  POST /fapi/v1/order | params={'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'STOP', 'quantity': 0.1, 'price': 2400.0, 'stopPrice': 2380.0, 'timeInForce': 'GTC', 'timestamp': 1741944551308, 'signature': 'f7a1b8...'}
+2025-03-14 10:29:12 | DEBUG    | client | RESPONSE 200 | body={"orderId": 2019348871, "symbol": "ETHUSDT", "status": "NEW", "clientOrderId": "x-Testnet-003", "price": "2400.00", "stopPrice": "2380.00", "avgPrice": "0", "origQty": "0.10", "executedQty": "0.00", "type": "STOP", "side": "BUY", "timeInForce": "GTC", "updateTime": 1741944551744}
+2025-03-14 10:29:12 | INFO     | orders | STOP_LIMIT order placed | orderId=2019348871 status=NEW
