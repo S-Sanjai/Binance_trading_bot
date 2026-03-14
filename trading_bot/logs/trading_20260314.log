@@ -1,5 +1,0 @@
-2026-03-14 16:32:36 | INFO     | cli | Order request | type=MARKET symbol=BTCUSDT side=BUY qty=0.01 price=None stopPrice=None
-2026-03-14 16:32:36 | INFO     | orders | Placing MARKET order | symbol=BTCUSDT side=BUY qty=0.01
-2026-03-14 16:32:37 | DEBUG    | client | REQUEST  POST /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1773486155002, 'signature': 'b767d0db1a635cbdc01250192d56a539893f3cd3ecf8308f410c92db034ebfe8'}
-2026-03-14 16:32:37 | DEBUG    | client | RESPONSE 200 | body={"orderId":12807438838,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"TkR9PxQvZH6eEAR0uCr7Vh","price":"0.00","avgPrice":"0.00","origQty":"0.010","executedQty":"0.000","cumQty":"0.000","cumQuote":"0.00000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTim
-2026-03-14 16:32:37 | INFO     | orders | MARKET order placed | orderId=12807438838 status=NEW
